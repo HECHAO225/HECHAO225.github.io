@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<h6><title>HC_sgsy</title></h6>
+
+
+
+<style type="text/css">
+
+#text span {color: green !important}
+	
+
+#Container{
+    width:1000px;
+    margin:0 auto;/*设置整个容器在浏览器中水平居中*/
+    background:#fff;
+}
+#Header{
+    height:80px;
+    background:#f39;
+    text-align: center;
+}
+#logo{
+    padding-left:50px;
+    padding-top:20px;
+    padding-bottom:50px;
+}
+#Content{
+    height:600px;
+    /*此处对容器设置了高度，一般不建议对容器设置高度，一般使用overflow:auto;属性设置容器根据内容自适应高度，如果不指定高度或不设置自适应高度，容器将默认为1个字符高度，容器下方的布局元素（footer）设置margin-top:属性将无效*/
+    margin-top:10px;/*此处讲解margin的用法，设置content与上面header元素之间的距离*/
+    background:#0FF;
+
+     
+}
+#Content-Left1{
+    height:200px;
+    width:200px;
+    margin:1px;/*设置元素跟其他元素的距离为20像素*/
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    background:#eba;
+    text-align: center;
+}
+#Content-Left2{
+    height:300px;
+    width:200px;
+    margin:1px;/*设置元素跟其他元素的距离为20像素*/
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    background:#eba;
+    text-align: center;
+    margin-top: 50PX;
+}
+
+
+
+
+#Content-Main{
+    height:550px;
+    width:730px;
+    margin:5px;/*设置元素跟其他元素的距离为20像素*/
+    float:right;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    background:#fa2;
+    text-align: center;
+    margin-top: 1px; 
+}
+/*注：Content-Left和Content-Main元素是Content元素的子元素，两个元素使用了float:left;设置成两列，这个两个元素的宽度和这个两个元素设置的padding、margin的和一定不能大于父层Content元素的宽度，否则设置列将失败*/
+#Footer{
+    height:225px;
+    background:#0ff;
+    margin-top:1px;
+}
+.Clear{
+  	clear:both;
+ }
+
+#Footer-Left{
+	height: 200px;
+	width: 200px;
+	background: #bea;
+	margin: 15px;
+	float: left;
+	text-align: center;
+
+}
+
+#Footer-Main{
+	height: 200px;
+	width: 700px;
+	background: #eba;
+	margin: 15px;
+	float: left;
+	text-align: left;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div id="Container">
+
+
+    <div id="Header">
+        <div id="logo"><h1>Welcome To Hechao's BLOG</h1>></div>
+    </div>
+
+
+    <div id="Content">
+        <div id="Content-Left1">
+        	<img src="1.jpg" width="200" height="200" />
+        	<div id="Content-Left2">
+        		<h3>MY HOBBY</h3>
+        		<ul>  
+      			<li>Play Football.</li>  
+      			<li>Computer Games.</li>  
+      			<li>Eating Snacks.</li>  
+      			<li>Sleep Late.</li>  	
+				</ul>
+        	</div>
+        </div>
+        
+        <div id="Content-Main">
+        	
+        	<center><h1>BLOG</h1></center>
+            <span>
+            <h2>My First Blog</h2>
+            Write web pages for the first time, feel very happy, hope to learn more in class.Feel the course is very interesting, I will love it.
+            </span>
+
+        	<span>
+            <left><h3>HTML, The Web's Core Language</h3></left>
+            In October 2014, the HTML Working Group published HTML5 as W3C Recommendation. This specification defines the fifth major revision of the Hypertext Markup Language (HTML), the format used to build Web pages and applications,the cornerstone of the Open Web Platform.<br>
+    "Today we think nothing of watching video and audio natively in the browser, and nothing of running a browser on a phone," said Tim Berners-Lee, W3C Director. 
+"We expect to be able to share photos, read the news, and look up information anywhere, on any device. 
+HTML5 brings to the Web video and audio tracks without needing plugins; programmatic access to a resolution-dependent bitmap canvas, which is useful for rendering graphs, game graphics, or other visual images on the fly; native support for scalable vector graphics (SVG) and math (MathML); annotations important for East Asian typography (Ruby); features to enable accessibility of rich applications; and much more.
+With today's publication of the Recommendation, software implementers benefit from Royalty-Free licensing commitments from over sixty companies under W3C's Patent Policy. Enabling implementers to use Web technology without payment of royalties is critical to making the Web a platform for innovation.
+
+</span>
+
+
+<li><a href="index.html"><img src="2.jpg" width="40" height="40" /></a></li>
+<li>click me</li>
+
+        </div>
+    </div>
+    <div class="Clear"><!--如何你上面用到float,下面布局开始前最好清除一下。--></div>
+    <div id="Footer">
+    	<div id="Footer-Left">
+    		<img src="2.jpg" width="200" height="200" />
+    	</div>
+    	<div id ="Footer-Main">
+
+    		<article>
+			<h3><center>This is my Fossa</center></h3>
+ 			<ul>  
+      			<li>I have a lovely 3 year old dog.</li>
+      			<li>I come from jiangxi,a beautiful city.</li>
+      			<li>I like playing computer games very much.</li>
+      			<li>I want to go traveling with you.</li>
+
+
+               
+                
+			</ul>
+
+ 			</article>
+
+    	</div>
+    </div>
+    <div class="Clear"></div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	document.write("hello world!")
+</script>
+
+</body>
+</html>
